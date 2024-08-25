@@ -28,7 +28,7 @@ function Hero({ openModal }) {
         </div>
 
         <div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
-          {/* <Background /> */}
+          <Background />
 
           <img
             src={heroImage}
