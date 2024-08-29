@@ -1,4 +1,10 @@
-function Background({ top = "10rem", left = "30%", right = "", bottom }) {
+function Background({
+  top = "10rem",
+  left = "30%",
+  right = "",
+  bottom,
+  rotate = "",
+}) {
   const style = {
     width: "800px",
     height: "400px",
@@ -12,7 +18,7 @@ function Background({ top = "10rem", left = "30%", right = "", bottom }) {
   };
   return (
     <>
-      <div className="bghero" style={style}>
+      <div className={`bghero ${rotate}`} style={style}>
         <svg
           width="100%"
           height="100%"

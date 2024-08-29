@@ -28,7 +28,9 @@ function Hero({ openModal }) {
         </div>
 
         <div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
-          <Background />
+          <div className="hidden md:block">
+            <Background />
+          </div>
 
           <img
             src={heroImage}
@@ -59,13 +61,3 @@ function HeroButton({
 }
 
 export default Hero;
-
-// p-4 text-sm font-semibold text-black bg-gray-300 rounded shadow-md border-2 border-gray-300 md:text-base hover:bg-white hover:text-gray-600
-
-// px-8 py-2 text-white bg-softRed border-2 border-softRed rounded-lg shadow-md hover:text-softRed hover:bg-white
-
-// px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2
-
-// block w-full py-3 text-white duration-200 border-2 rounded-lg bg-softBlue hover:text-softBlue hover:bg-white border-softBlue
-
-// inline-flex px-6 py-3 font-semibold text-center text-white duration-200 transform rounded-lg cursor-pointer focus:outline-none bg-softRed hover:opacity-90

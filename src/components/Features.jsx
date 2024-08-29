@@ -4,6 +4,7 @@ import Paragraph from "./Paragraph";
 import image1 from "../assets/images/illustration-features-tab-1.svg";
 import image2 from "../assets/images/illustration-features-tab-2.svg";
 import image3 from "../assets/images/illustration-features-tab-3.svg";
+import Background from "./Background";
 // import { useState } from "react";
 
 const tabs = [
@@ -43,7 +44,7 @@ function Features({ openModal }) {
   return (
     <>
       <section id="Features">
-        <div className="container relative px-4 py-6 mx-auto mb-20 mt-20">
+        <div className="container relative px-4 py-6 mx-auto mb-32 mt-20">
           <Heading>Features</Heading>
           <Paragraph>
             Our aim is to make it quick and easy for you to access your
@@ -98,6 +99,9 @@ function TabContent({ tabsData, active, openModal }) {
       <div className="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1">
         <div className="flex justify-center md:w-1/2">
           <img src={item.image} className="relative z-10" alt={item.title} />
+          <div className="hidden md:block">
+            <Background rotate={`rotate-180`} left={`-38%`} top={`7rem`} />
+          </div>
         </div>
         <div className="flex flex-col space-y-8 md:w-1/2">
           <h3 className="mt-20 text-3xl font-semibold text-center md:mt-0 md:text-left">
